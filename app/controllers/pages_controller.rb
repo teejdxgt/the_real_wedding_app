@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def details
-    @title = "Detials"
+    @title = "Details"
   end
 
 end
