@@ -1,5 +1,9 @@
 TheRealWeddingApp::Application.routes.draw do
-  match '/contact', :to => 'pages#contact'
+  get "users/new"
+  
+  match '/signup',  :to => 'users#new'
+
+  match '/contact',   :to => 'pages#contact'
   match '/details',   :to => 'pages#details'
   match '/voting',    :to => 'pages#voting'
   
