@@ -6,5 +6,13 @@ class PagesController < ApplicationController
   def details
     @title = "Details"
   end
+  
+  def voting
+    @title = "Music Voting"
+  end
+  
+  def contact
+    @title = "Contact"
+  end
 
 end

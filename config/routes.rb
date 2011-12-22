@@ -1,7 +1,9 @@
 TheRealWeddingApp::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/details"
+  match '/contact', :to => 'pages#contact'
+  match '/details',   :to => 'pages#details'
+  match '/voting',    :to => 'pages#voting'
+  
+  root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
