@@ -12,6 +12,11 @@ group :development do
   gem 'annotate', '2.4.0'
 end
 
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+  gem 'pg'
+end
+
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
