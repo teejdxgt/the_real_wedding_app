@@ -84,18 +84,21 @@ nav ul li a:hover {
 /* Sign up button */
 
 a.signup_button {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 300px;
+  margin-top: -48px;
   display: block;
   text-align: center;
-  width: 190px;
-  color: #d1b328;
-  background: #123;
-  font-size: 150%;
-  padding: 20px;
-  border-style:solid;
-  border-width:5px;
-  border-color: #d1b328;
+  vertical-align: text-middle;
+  width: 182px;
+  height: 40px;
+  color: #fff;
+  /*background: #d1b328;*/
+  font-size: 125%;
+  padding: 0px;
+  /*border-style:solid;*/
+  border-width:2px;
+  border-color: #123;
+  background-image: url('button2.png');
 }
 
 /* Round corners */
