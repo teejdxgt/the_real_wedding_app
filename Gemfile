@@ -6,11 +6,13 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'gravatar_image_tag'
+gem 'kaminari'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
   gem 'annotate', '2.4.0'
   gem "sqlite3-ruby", :require => "sqlite3"
+  gem 'faker', '0.3.1'
 end
 
 group :production do

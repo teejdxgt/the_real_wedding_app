@@ -1,5 +1,5 @@
 .container {
-  width: 710px;
+  /*width: 710px;*/
 }
 
 body {
@@ -84,11 +84,10 @@ nav ul li a:hover {
 /* Sign up button */
 
 a.signup_button {
-  margin-left: 300px;
-  margin-top: -48px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 15px;
   display: block;
-  text-align: center;
-  vertical-align: text-middle;
   width: 182px;
   height: 40px;
   color: #fff;
@@ -116,14 +115,19 @@ img.center {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 2em;
+	margin-top: 20px;
+	border-width:5px;
+    border-color: #d1b328;
+    border-style:solid
 }
 
 img.logo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -10px;
-	margin-bottom: -1em;
+	margin-top: -20px;
+	margin-bottom: 0em;
+	height: 37px;
 }
 
 /* Footer */
@@ -207,4 +211,12 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
 }
