@@ -25,8 +25,8 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "Thanks for RSVPing!"
-      @user.follow!(User.find(1))
-      @user.follow!(User.find(2))
+      @user.follow!(User.find(7))
+      @user.follow!(User.find(8))
       #redirect_to @user
       redirect_to root_path
     else
