@@ -1,24 +1,12 @@
-<h1>Sign up</h1>
+<h1></h1>
 
-<%= form_for(@user) do |f| %>
-<%= render 'shared/error_messages', :object => f.object %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
+<%= semantic_form_for(@user) do |f| %>
+<%= f.inputs do %>
+	<%= f.input :name %>
+	<%= f.input :email %>
+	<%= f.input :password, :label => "Create Password"  %>
+	<%= f.input :password_confirmation, :label => "Re-enter Password"  %></br>
+	<%= f.input :rsvp,  :as => :radio, :label => "Are you coming?", :wrapper_html => { :class => "rsvp" }%>
+<% end %>
+	<%= f.buttons %>
 <% end %>

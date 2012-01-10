@@ -18,6 +18,11 @@
     <%= f.label :password_confirmation, "Confirmation" %><br />
     <%= f.password_field :password_confirmation %>
   </div>
+  <div class="field">
+    <%= f.label :rsvp, "Are you coming?" %></br>
+    <rsvp><%= f.radio_button :rsvp, true %><%= f.label :rsvp, "Yes" %></rsvp>
+	<rsvp><%= f.radio_button :rsvp, false %><%= f.label :rsvp, "No" %></rsvp>
+  </div>
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
