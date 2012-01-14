@@ -76,6 +76,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 .formtastic .post{
   margin-top: 10px;
+  margin-left: 75px;
 }
 
 .formtastic .update{
