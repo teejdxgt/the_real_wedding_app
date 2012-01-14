@@ -9,7 +9,7 @@ gem 'gravatar_image_tag'
 gem 'will_paginate', '3.0.pre2'
 gem "formtastic", "2.0.2"
 gem 'compass'
-gem 'haml' # for SASS
+gem 'haml'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
