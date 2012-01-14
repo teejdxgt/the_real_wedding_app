@@ -8,6 +8,8 @@ gem 'rails', '3.1.1'
 gem 'gravatar_image_tag'
 gem 'will_paginate', '3.0.pre2'
 gem "formtastic", "2.0.2"
+gem 'compass'
+gem 'haml' # for SASS
 
 group :development do
   gem 'rspec-rails', '2.6.1'
@@ -34,7 +36,6 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'compass'
 end
 
 gem 'jquery-rails'
