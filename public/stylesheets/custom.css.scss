@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: url('grungepaper6_by_fudgegraphics.jpg');
+  background-image: url('paper.jpg');
 }
 
 header {
@@ -113,7 +113,7 @@ nav ul li a:hover {
 a.signup_button {
   margin-left: auto;
   margin-right:auto;
-  margin-top: 15px;
+  margin-top: 25px;
   display: block;
   width: 182px;
   height: 40px;
@@ -138,14 +138,23 @@ a.signup_button {
 /* Centering an Image */
 
 img.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 2em;
-	margin-top: 20px;
-	border-width:2px;
-    border-color: #617798;
-    border-style:solid
+  @include rotate(2deg);
+  z-index: 0;
+}
+
+img.tape {
+  @include rotate(-25deg);
+  margin-left: 100px;
+  position: absolute;
+  z-index: 1;
+}
+
+img.tape2 {
+  @include rotate(-25deg);
+  position: absolute;
+  margin-left: 700px;
+  margin-top: -70px;
+  z-index: 1;
 }
 
 img.logo {
@@ -182,6 +191,7 @@ table.profile {
 td.main {
   padding: 1em;
   @include box-shadow(rgba(0,0,0,0.5) 0 0 6px 4px);
+  width: 70%;
 }
 
 td.sidebar {
@@ -331,6 +341,7 @@ $column-space: 30px;
   color: #464646;
   line-height: 25px;
   padding-top: 20px;
+  padding-bottom: 15px;
 
   hr {
     margin: 0 0 50px 0;
@@ -355,7 +366,7 @@ $column-space: 30px;
   	margin-left: 2*$column-space;
   	margin-right: auto;
 	background: none;
-	
+
     h2 {
       line-height: 30px;
       margin-bottom: 0px;
@@ -628,3 +639,4 @@ div#reception {
 /*Blue highlighting on selected input fields*/
 
 input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus, input.text:focus, input.title:focus, textarea:focus {border:2px solid #306EFF;}
+

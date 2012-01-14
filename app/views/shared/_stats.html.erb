@@ -1,7 +1,7 @@
 <% @user ||= current_user %>
 <div class="stats">
   <table summary="User stats">
-    <tr>
+    <br><tr>
       <td>
         <a href="<%= following_user_path(@user) %>">
           <span id="following" class="stat">
@@ -9,7 +9,7 @@
           </span>
         </a>
       </td>
-      <td>
+      <td>&nbsp;|&nbsp;
         <a href="<%= followers_user_path(@user) %>">
           <span id="followers" class="stat">
             <%= pluralize(@user.followers.count, "follower") %>

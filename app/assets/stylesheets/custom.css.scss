@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: url('grungepaper6_by_fudgegraphics.jpg');
+  background-image: url('paper.jpg');
 }
 
 header {
@@ -140,6 +140,8 @@ a.signup_button {
 img.center {
   @include rotate(2deg);
   z-index: 0;
+  margin-left: 175px;
+  margin-top: 25px;
 }
 
 img.tape {
@@ -150,11 +152,11 @@ img.tape {
 }
 
 img.tape2 {
-  @include rotate(-25deg);
-  position: absolute;
-  margin-left: 700px;
-  margin-top: -70px;
-  z-index: 1;
+@include rotate(-25deg);
+margin-left: -100px;
+margin-top: 457px;
+position: absolute;
+z-index: 1;
 }
 
 img.logo {
@@ -211,6 +213,21 @@ div.field, div.actions {
   margin-bottom: 10px;
 }
 
+div.actions input[type="submit"]{
+  margin-top: 25px;
+  background-color: #617798;
+  width: 85px;
+  height: 38px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 900;
+  margin-left: 25px;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
 .field_with_errors {
   margin-top: 10px;
   padding: 2px;
@@ -253,11 +270,30 @@ div.field, div.actions {
 }
 
 ul.users {
-  margin-top: 1em;
+  margin-top: -1em;
+}
+
+ul.users li a {
+  padding: 0 5px;
+  color: #464646;
 }
 
 .users li {
   list-style: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  margin-top: 0.3em;
+}
+
+ul.users li .a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.users li .gravatar{
+  	padding: 4px 4px 4px 4px;
+	background: #fff;
+	@include box-shadow(rgba(0,0,0,0.15) 0 0 6px 2px);
 }
 
 h1.micropost {
@@ -278,9 +314,11 @@ table.microposts tr {
 }
 
 table.microposts tr td.gravatar {
-  border-top: 1px solid #ccc;
   vertical-align: top;
   width: 50px;
+  padding: 4px 4px 4px 4px;
+  background: #fff;
+  @include box-shadow(rgba(0,0,0,0.15) 0 0 6px 2px);
 }
 
 table.microposts tr td.micropost {
@@ -288,6 +326,7 @@ table.microposts tr td.micropost {
   vertical-align: top;
   padding-top: 10px;
   background-image: url('lined_paper.png');
+  font-size: 18px;
 }
 
 table.microposts tr td.micropost span.timestamp {
@@ -353,7 +392,11 @@ $column-space: 30px;
     clear: both;
   }
 
-  a, a:visited {
+  a {
+    color: #464646;
+  }
+
+  a:hover {
     color: #339;
   }
 
@@ -366,7 +409,7 @@ $column-space: 30px;
   	margin-left: 2*$column-space;
   	margin-right: auto;
 	background: none;
-	
+
     h2 {
       line-height: 30px;
       margin-bottom: 0px;
@@ -639,3 +682,4 @@ div#reception {
 /*Blue highlighting on selected input fields*/
 
 input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus, input.text:focus, input.title:focus, textarea:focus {border:2px solid #306EFF;}
+
