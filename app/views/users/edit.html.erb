@@ -1,31 +1,14 @@
-<h1>Edit user</h1>
+<center><h1>Edit Profile</h1></center>
 
-<%= form_for(@user) do |f| %>
-  <%= render 'shared/error_messages', :object => f.object %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="field">
-    <%= f.label :rsvp, "Are you coming?" %></br>
-    <rsvp><%= f.radio_button :rsvp, true %><%= f.label :rsvp, "Yes" %></rsvp>
-	<rsvp><%= f.radio_button :rsvp, false %><%= f.label :rsvp, "No" %></rsvp>
-  </div>
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
+<%= semantic_form_for(@user) do |f| %>
+<%= f.inputs do %>
+	<%= f.input :name %>
+	<%= f.input :email %>
+	<%= f.input :password, :label => "Change Password"  %>
+	<%= f.input :password_confirmation, :label => "Re-enter Password"  %></br>
+	<%= f.input :rsvp,  :as => :radio, :label => "Are you coming?", :wrapper_html => { :class => "rsvp" }%>
+<% end %>
+	<%= f.buttons %>
 <% end %>
 
 <div>

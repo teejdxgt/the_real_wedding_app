@@ -2,19 +2,19 @@
   <table class="front" summary="For signed-in users">
     <tr>
       <td class="main">
-        <h1 class="micropost">Speak now or forever hold your peace!</h1>
+        <h1 class="micropost">Post now or forever hold your peace!</h1>
         <%= render 'shared/micropost_form' %>
 		<%= render 'shared/feed' %>
       </td>
-      <td class="sidebar round">
+      <!--td class="sidebar round">
         <%= render 'shared/user_info' %>
 		<%= render 'shared/stats' %>
-      </td>
+      </td-->
     </tr>
   </table>
 <% else %>
-<!--h1><center>We're Getting Hitched!</center></h1--> 
-<%= image_tag("WeadingHeader2.png", :alt => "Sample App", :class => "logo round",) %>
+<h1><center>Scottie & TJ are Getting Hitched!</center></h1> 
+<!--%= image_tag("WeadingHeader2.png", :alt => "Sample App", :class => "logo round",) %-->
 
 <%= link_to "", signup_path, :class => "signup_button round" %>
 

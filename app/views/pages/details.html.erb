@@ -1,5 +1,185 @@
-<h1>Get your swerve on!</h1>
-<p>
-    These are the details for Scottie and TJ's wedding.
-</p>
+<div id="content">
+<center><h1>The Wedding</h1></center>
+
+<section id="the-wedding">
+  <div id="ceremony">
+    <div class="description">
+      <h2>Ceremony</h2>
+      <p>Scottie and TJ will be married on October 13, 2013 on the Dockside at Piedmont Park. Dockside is located behind the Piedmont Park Conservancy Community Center near the 12th Street gate park entrance to the park. The ceremony will start at 5:30 pm (tentative).</p>
+      <p>Please plan enough time for arriving. The walk from the parking deck and the nearest Marta station are both approximately 15 minutes.</p>
+    </div>
+    <div class="details">
+      <h4>Piedmont Park Dock</h4>
+      <p>1320 Monroe Dr., NE<br>
+        Atlanta, Georgia</p>
+      <h4>October 13, 2013</h4>
+      <p>5:30 in the afternoon</p>
+    </div>
+    <%= image_tag 'DS_dock_lawn_ceremony.jpg', :class => 'polaroid church' %>
+  </div>
+  <div class="clear"></div>
+
+  <div id="eventmap"></div>
+
+  <div id="reception">
+    <div class="description">
+      <h2>Reception</h2>
+      <p>The reception will be held at Magnolia Hall in Piedmont Park.  The reception begins at 6:30 in the evening with a cocktail hour and photos, followed by dinner, dancing with DJ Bang, and of course cake!</p>
+      <p>Nestled in the heart of Atlanta in historic Piedmont Park, Magnolia Hall is easy to find and is a 10 - 15 minute walk through the park from the Wedding location.  A shuttle will also be available to take you to and from the reception.</p>
+    </div>
+    <div class="details">
+      <h4>Magnolia Hall</h4>
+      <p>400 Park Drive<br>
+        Atlanta, Georgia</p>
+      <h4>October 13, 2013</h4>
+      <p>6:30 in the afternoon</p>
+    </div>
+    <%= image_tag 'MH_outside.jpg', :class => 'polaroid house' %>
+    <%= image_tag 'MH_inside.jpg', :class => 'polaroid backyard' %>
+  </div>
+</section>
+
+<hr>
+
+<section id="the-party">
+  <h2>The Party</h2>
+  <div class="two-column">
+	<div>
+      <h3 class="groomsmen">The Groomsmen</h3>
+      <div class="groomsman">
+        <%= fb_image_tag '12819565' %>
+        <b>Rajeev Sibal</b>
+        Best Man
+      </div>
+      <div class="groomsman">
+        <%= fb_image_tag '12817939' %>
+        <b>Kevin Camp</b>
+        Friend from Georgia Tech
+      </div>
+      <div class="groomsman">
+        <%= fb_image_tag '12802814' %>
+        <b>Cabe Duncan</b>
+        Friend from Georgia Tech
+      </div>
+      <div class="groomsman">
+        <%= fb_image_tag '12800529' %>
+        <b>Ross Gortney</b>
+        Friend from Georgia Tech
+      </div>
+      <div class="groomsman">
+        <%= fb_image_tag '100001301072490' %>
+        <b>John Edenfield</b>
+        Friend from Georgia Tech* 
+      </div>
+      <div class="groomsman">
+        <%= fb_image_tag '12807247' %>
+        <b>Brian Culler</b>
+        Friend from Vitrue
+      </div>
+    </div>
+    <div>
+      <h3 class="bridesmaids">The Bridesmaids</h3>
+      <div class="bridesmaid">
+        <%= fb_image_tag '1062805295' %>
+        <b>Katie Frassinelli</b>
+        Maid of Honor
+      </div>
+      <div class="bridesmaid">
+        <%= fb_image_tag '6502915' %>
+        <b>Laura Lee Fleming</b>
+        Maid of Honor
+      </div>
+      <div class="bridesmaid">
+        <%= fb_image_tag '41105930' %>
+        <b>Amber Weaver</b>
+        Friend from High School
+      </div>
+      <div class="bridesmaid">
+        <%= fb_image_tag '12819858' %>
+        <b>Ashley Cook</b>
+        Friend from Georgia Tech
+      </div>
+      <div class="bridesmaid">
+        <%= fb_image_tag '700874' %>
+        <b>Alex Coso</b>
+        Friend from Georgia Tech
+      </div>
+    </div>
+  </div>
+ </section>
+
+<hr>
+
+<section id="the-trip">
+  <h2>Getting There</h2>
+
+  <p class="getting-there">Piedmont Park is located in the heart of Atlanta.  For those choosing to use public transit (God bless you), there are two stations within walking distance, Arts Center Station and Midtown Station.</p>
+  <p class="getting-there-indented">&bull;Exit the Midtown Station, take 10th Street towards Peachtree Street and continue on 10th until you reach Piedmont Avenue. Turn left on Piedmont Avenue and walk two blocks to the 12th and 14th Street gates of Piedmont Park.</p>
+  <p class="getting-there-indented">&bull;Exit the Arts Center Station heading south on West Peachtree street for one block. Head east (go left) on 14th Street for three blocks until you reach the 14th Street entrance to the Park.</p>
+  <p class="getting-there"></p>
+  <p class="getting-there">If you choose to drive, then the Botanical Gardens Parking Deck is in close proximity to both the ceremony and reception (Parking is not free).</p>
+  <a href="http://g.co/maps/dsst7"
+     class="map"><%= image_tag 'Map.jpg', :class => 'polaroid map' %></a>
+
+  <h2>Where to Stay</h2>
+  <p>This is a placeholder for when we figure this out</p>
+
+  <div class="three-column">
+    <div class="hotel">
+      <a href="http://www.omnihotels.com/FindAHotel/NewportNews.aspx"
+         class="img" target="_blank"><%= image_tag 'travel/omni.jpg', :class => 'polaroid omni' %></a>
+      <div class="meta">
+        <h4>The Omni</h4>
+        1000 Omni Boulevard<br>
+        Newport News, Virginia<br>
+        757-873-6664<br>
+        $129 / night &nbsp;|&nbsp;
+        <a href="http://www.omnihotels.com/FindAHotel/NewportNews.aspx" target="_blank">link</a>
+      </div>
+      <p class="details">We recommend the Omni for the younger crowd.  The wedding party will be staying here,
+        and one of Newport News' few clubs is downstairs.  We are hoping to provide
+        a late-night shuttle to this hotel.</p>
+      <p><b>Reservations:</b><br>
+        Call the hotel and ask for the Stephens/Wood Wedding block.</p>
+    </div>
+
+    <div class="hotel">
+      <a href="http://bit.ly/swwed" target="_blank"
+         class="img"><%= image_tag 'travel/hiltongardeninn.jpg', :class => 'polaroid hiltongardeninn' %></a>
+      <div class="meta">
+        <h4>Hilton Garden Inn</h4>
+        180 Regal Way<br>
+        Newport News, Virginia<br>
+        757-947-1080<br>
+        $129 / night &nbsp;|&nbsp;
+        <a href="http://bit.ly/swwed" target="_blank">link</a>
+      </div>
+      <p class="details">We recommend the Hilton Garden Inn for family and other traveling guests.  It is
+        in a quieter location, and most of Elliott's family will be staying here.</p>
+      <p><b>Reservations:</b><br>
+        Book online at our <a href="http://bit.ly/swwed">event page</a>, or call and mention code SWWED.</p>
+    </div>
+
+    <div class="hotel">
+      <a href="https://www.marriott.com/hotels/travel/phfcw-williamsburg-marriott/" class="img" target="_blank"><%= image_tag 'travel/wmarriott.jpg', :class => 'polaroid wmarriott' %></a>
+      <div class="meta">
+        <h4>Williamsburg Marriott</h4>
+        50 Kingsmill Road<br>
+        Williamsburg, Virginia<br>
+        757-220-2500<br>
+        $149 / night &nbsp;|&nbsp;
+        <a href="https://www.marriott.com/hotels/travel/phfcw-williamsburg-marriott/" target="_blank">link</a>
+      </div>
+      <p class="details">The Williamsburg Marriott is located near historic Colonial Williamsburg.  It is a bit further from the wedding events, but provides a great setting for touring during the day on Saturday.</p>
+      <p><b>Reservations:</b><br>
+        We do not have a block reserved here.  Please call the hotel.</p>
+    </div>
+
+  </div>
+
+
+</section>
+</div>
+
+
 

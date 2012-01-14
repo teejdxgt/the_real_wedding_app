@@ -25,7 +25,6 @@ This stylesheet forms part of the Formtastic Rails Plugin
   padding:0;
 }
 
-
 .formtastic input,
 .formtastic textarea {
   padding: 9px;  
@@ -54,7 +53,8 @@ This stylesheet forms part of the Formtastic Rails Plugin
 --------------------------------------------------------------------------------------------------*/
 .formtastic .button,
 .formtastic .submit,
-.formtastic .create {
+.formtastic .create,
+.formtastic .update {
   width: auto;  
   border: 0px;
   /*background: #617798; */ 
@@ -63,6 +63,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
   -moz-border-radius: 5px;  
   -webkit-border-radius: 5px;
 }
+
 .formtastic .submit {
   background: #617798;
   margin-left: 50px
@@ -71,6 +72,14 @@ This stylesheet forms part of the Formtastic Rails Plugin
 .formtastic .create{
   background: #617798;
   margin-left: 50px
+}
+
+.formtastic .post{
+  margin-top: 10px;
+}
+
+.formtastic .update{
+  background: #617798;
 }
 
 .formtastic .button {
@@ -86,9 +95,28 @@ This stylesheet forms part of the Formtastic Rails Plugin
   color: #999999;
 }
 
+.formtastic #micropost_content_input {
+  margin-left: 25px; 
+  font-size: 0px;
+}
+
 .formtastic #user_rsvp_input .label {
   margin-left: 0px;
   color: #999999;
+}
+
+/* STRING, NUMERIC, PASSWORD, EMAIL, URL, PHONE, SEARCH (ETC) OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+.formtastic .stringish input {
+  width:80%;
+}
+
+.formtastic #micropost_content{
+  width:90%;
+  height: 5em;
+  margin-left: auto;
+  margin-top: auto;
+  font-size: 24px;
 }
 
 /* TEXTAREA OVERRIDES
@@ -109,7 +137,8 @@ This stylesheet forms part of the Formtastic Rails Plugin
 }
 
 .formtastic .rsvp{
-	font-size: 12px;
+	font-size: 17px;
+	font-weight: bold;
 }
 
 .formtastic .choice label .user_rsvp_true {
