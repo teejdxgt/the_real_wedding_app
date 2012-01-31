@@ -1,6 +1,10 @@
 <tr>
   <td class="gravatar">
-    <%= link_to gravatar_for(feed_item.user), feed_item.user %>
+	<% if feed_item.user.fbid? %>
+		  <%= link_to fb_image_tag(feed_item.user.fbid), feed_item.user %>
+		<% else %>
+        <%= link_to gravatar_for(feed_item.user), feed_item.user %>
+      <% end %>
   </td>
   <td class="micropost">
     <span class="user">

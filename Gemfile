@@ -12,6 +12,7 @@ gem 'heroku'
 gem 'haml'
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git'
 gem 'sass-rails',   '~> 3.1.4'
+gem "koala"
 
 group :development do
   gem 'rspec-rails', '2.6.1'

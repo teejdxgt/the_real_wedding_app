@@ -7,6 +7,7 @@ module UsersHelper
   end
 
   def fb_image_tag(id)
-    image_tag "http://graph.facebook.com/#{id}/picture"
+    image_tag "http://graph.facebook.com/#{id}/picture", :class => 'gravatar'
   end
 end
+

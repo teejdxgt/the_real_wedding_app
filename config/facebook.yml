@@ -1,0 +1,9 @@
+# config/facebook.yml
+development:
+ app_id: 367348516615173
+ secret_key: c8f84f5e91e9ad1d32b7979286b0d62d
+ callback_url: http://localhost:3000/
+production:
+  app_id: 245206528889093
+  secret_key: 6e3091dde11625036c5dcb36ac62c4e4
+  callback_url: http://www.scottieandtj.com

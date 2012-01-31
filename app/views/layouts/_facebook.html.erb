@@ -1,0 +1,17 @@
+<div id="fb-root"></div>
+<script>
+    $(function() {
+        window.fbAsyncInit = function() {
+            FB.init({appId: '245206528889093', status: true, cookie: true, oauth: true,
+                xfbml: true});
+            FB.UIServer.setLoadedNode = function(a,b){FB.UIServer._loadedNodes[a.id]=b;};
+        };
+        (function() {
+            var e = document.createElement('script');
+            e.async = true;
+            e.src = document.location.protocol +
+                    '//connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    });
+</script>

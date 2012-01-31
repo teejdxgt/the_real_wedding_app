@@ -16,7 +16,23 @@
 <div id="content">
 <h1><center>Scottie & TJ are Getting Hitched!</center></h1> 
 
-<%= link_to "", signup_path, :class => "signup_button round" %>
+<table border="0">
+ <% if @likes %>
+ <% for like in @likes %>
+ <tr>
+ <td><b><%=h like["name"]%> </b></td>
+ </tr>
+ <tr>
+ <td><%=h like["category"] %></td>
+ </tr>
+ <tr>
+ <td>&ndash;</td>
+ </tr>
+ <% end %>
+ <% end %>
+</table>
+
+<%= link_to "", "#", :class => "signup_button round", :onclick => "fbLogin()" %>
 
 <%= image_tag("thin_peach_2.png", :alt => "Missing tape", :class => "tape")%>
 <%= image_tag("SWT.png", :alt => "Broke Ass Image", :class => "polaroid center") %>
@@ -24,6 +40,37 @@
 <br><br><p><center>
 Yep, I tricked her into marrying me. It all goes down on October 19, 2013 in Piedmont Park.
 </center></p>
+
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<%= Facebook::APP_ID %>',
+      status     : true, 
+      cookie     : true,
+      xfbml      : true,
+	  oauth 	 : true
+    });
+  };
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+
+  function fbLogin() {
+       FB.login(function(response) { 
+       if (response.authResponse) { 
+       // user is logged in 
+       window.location.href = '/signup?fb_id=' + response.authResponse.userID
+       } else { 
+       // user cancelled login 
+       location.href = '/signup' 
+       } 
+      });
+  }
+</script>
 </div>
 <% end %>
 

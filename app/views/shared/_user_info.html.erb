@@ -1,6 +1,10 @@
 <div class="user_info">
   <a href="<%= user_path(current_user) %>">
-    <%= gravatar_for current_user, :size => 30 %>
+  <% if current_user.fbid? %>
+     <%= fb_image_tag current_user.fbid %>
+  <% else %>
+	 <%= gravatar_for current_user, :size => 30 %>
+  <% end %>
     <span class="user_name">
       <%= current_user.name %>
     </span>

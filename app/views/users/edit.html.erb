@@ -12,6 +12,10 @@
 <% end %>
 
 <div>
-  <%= gravatar_for @user %>
+    <% if @user.fbid? %>
+	  <%= fb_image_tag @user.fbid %>
+	<% else %>
+      <%= gravatar_for @user %>
+    <% end %>
   <a href="http://gravatar.com/emails">change</a>
 </div>
