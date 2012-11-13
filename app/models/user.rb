@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessor :password
-  attr_accessible :name, :email, :password, :password_confirmation, :rsvp, :fbid
+  attr_accessible :name, :email, :password, :password_confirmation, :rsvp, :fbid, :number_of_guests
   
   has_many :microposts, :dependent => :destroy
   has_many :relationships, :foreign_key => "follower_id",
@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
   validates :password, :presence     => true,
                        :confirmation => true,
                        :length       => { :within => 6..40 }
-                       
+  validates :number_of_guests, numericality: {only_integer: true, less_than_or_equal_to: 1}                  
   before_save :encrypt_password
   
   scope :admin, where(:admin => true)

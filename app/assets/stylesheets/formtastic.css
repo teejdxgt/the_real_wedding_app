@@ -96,7 +96,6 @@ This stylesheet forms part of the Formtastic Rails Plugin
 	position: relative;
 	border: 0; 
 	padding: 0;
-	cursor: pointer;
 	overflow: visible; /* removes extra side padding in IE */
 }
 

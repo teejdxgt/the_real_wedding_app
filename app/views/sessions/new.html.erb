@@ -5,7 +5,9 @@
 	<%= f.input :email %>
 	<%= f.input :password %>
 <% end %>
-	<%= f.buttons %>
+	<%= f.buttons do %>
+	  <%= f.commit_button :label => "Sign In", :button_html => { :class => "submit" } %>
+	<% end %>
 <% end %>
 
 <p>Haven't RSVP'd yet? <%= link_to "RSVP Here!", signup_path %></p>

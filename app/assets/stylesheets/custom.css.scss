@@ -47,7 +47,7 @@ section h1 {
   font-family: 'Shadows Into Light', cursive;
   font-size: 48px;
   color: #212121;
-  @include text-shadow(#666 3px 3px 0, #777 -2px -1px 0);
+  @include text-shadow(#666 .5px .5px 0, #777 -2px -1px 0);
   padding-top: 6px;
   padding-left: 30px;
 }
