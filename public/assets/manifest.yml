@@ -10,6 +10,7 @@ WeddingHeader.png: WeddingHeader-330c8dccfa60f492d53e2484d91cc539.png
 bottlebar.jpg: bottlebar-8779cde8676c8038f14ca3b06c836786.jpg
 button2.png: button2-aa35469714b339146f83a26e44e297bd.png
 clermont.jpg: clermont-a69ff7df130496b5f5b80fef01a27e05.jpg
+cork-board-texture.jpg: cork-board-texture-30f5a67f5a75a7a02a402009b38abda1.jpg
 follow.png: follow-53837a04d4644a0ef70f8a2ed77787b7.png
 lined_paper.png: lined_paper-dce1d51b206bcdefa614c819b29b11d2.png
 paper.jpg: paper-d36a59a495df48c91e9106737782dd28.jpg
@@ -18,7 +19,7 @@ rails.png: rails-e4b51606cd77fda2615e7439907bfc92.png
 thin_peach_2.png: thin_peach_2-d928f5ee7b20d488347f464af298172b.png
 unfollow.png: unfollow-f61a3aff5238ab3cb0bd2fc499ee639b.png
 application.js: application-6728c025b1babaf8d0ee37d4e69971dd.js
-application.css: application-eceb31e26df374b31d8df5d0003bad9b.css
+application.css: application-bded77f10db980cb59c7dce8fbabe41d.css
 blueprint/plugins/buttons/icons/cross.png: blueprint/plugins/buttons/icons/cross-1f87fac86c438386527b5e7d5ceecb0e.png
 blueprint/plugins/buttons/icons/key.png: blueprint/plugins/buttons/icons/key-5f38d0204e83d3d83585a62ff993342b.png
 blueprint/plugins/buttons/icons/tick.png: blueprint/plugins/buttons/icons/tick-09de3f730b3b6ef960450a506b0916a9.png
