@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
   validates :password, :presence     => true,
                        :confirmation => true,
                        :length       => { :within => 6..40 }
-  validates :number_of_guests, numericality: {only_integer: true, less_than_or_equal_to: 1}                  
+  validates :number_of_guests, numericality: {only_integer: true, less_than_or_equal_to: 1, greater_than_or_equal_to: 0}                  
   before_save :encrypt_password
   
   scope :admin, where(:admin => true)
