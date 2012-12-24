@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-image: url('paper.jpg');
+  background-image: url('music.jpg');
 }
 
 header {
@@ -94,11 +94,11 @@ nav ul li {
 
 nav ul li a {
   padding: 0 5px;
-  color: #464646;
+  color: #000000;
 }
 
 nav ul li a:visited {
-  color: #464646;
+  color: #000000;
 }
 
 nav ul li a:hover {
@@ -323,7 +323,7 @@ table.microposts tr td.micropost {
   //border-top: 1px solid #ccc;
   vertical-align: top;
   padding-top: 10px;
-  background-image: url('lined_paper.png');
+  background-image: url('Background_Paper.jpg');
   font-size: 18px;
 }
 
@@ -372,7 +372,7 @@ $column-space: 30px;
 #content {
   @include box-shadow(rgba(0,0,0,0.5) 0 0 6px 4px);
   position: relative;
-  background-image: url('lined_paper.png');
+  background-image: url('Background_Paper.jpg');
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   color: #464646;

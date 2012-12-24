@@ -2,8 +2,8 @@
 
 <%= semantic_form_for(@user) do |f| %>
 <%= f.inputs do %>
-	<%= f.input :name %>
-	<%= f.input :email %>
+	<%= f.input :name, :input_html => { :value => params[:fb_name] } %>
+	<%= f.input :email, :input_html => { :value => params[:fb_email] } %>
 	<%= f.input :password, :label => "Create Password"  %>
 	<%= f.input :password_confirmation, :label => "Re-enter Password"  %></br>
 	<%= f.input :rsvp,  :as => :radio, :label => "Are you coming?", :wrapper_html => { :class => "rsvp" }%>
