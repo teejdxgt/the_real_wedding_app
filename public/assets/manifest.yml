@@ -1,4 +1,5 @@
 ---
+Background_Paper.jpg: Background_Paper-cd59aacb5b31b26c3a15bf635bbd1157.jpg
 DS_dock_lawn_ceremony.jpg: DS_dock_lawn_ceremony-fbc682ed6f84fa2d4175dac2e9c81b37.jpg
 DockMap.jpg: DockMap-7061d8ab7b4a0575e741b33a717ae03e.jpg
 MH_inside.jpg: MH_inside-0a2075d6d176225fade0476d4960a3e6.jpg
@@ -13,13 +14,15 @@ clermont.jpg: clermont-a69ff7df130496b5f5b80fef01a27e05.jpg
 cork-board-texture.jpg: cork-board-texture-30f5a67f5a75a7a02a402009b38abda1.jpg
 follow.png: follow-53837a04d4644a0ef70f8a2ed77787b7.png
 lined_paper.png: lined_paper-dce1d51b206bcdefa614c819b29b11d2.png
+music.jpg: music-c40fc4d5968446dd518639bfe76400be.jpg
+notebookPaper1.jpg: notebookPaper1-9ab9cc54627692bd9be8bc5de4c355ec.jpg
 paper.jpg: paper-d36a59a495df48c91e9106737782dd28.jpg
 porter.jpg: porter-41c19ac8094fc9bfeecb5fe2cca6d125.jpg
 rails.png: rails-e4b51606cd77fda2615e7439907bfc92.png
 thin_peach_2.png: thin_peach_2-d928f5ee7b20d488347f464af298172b.png
 unfollow.png: unfollow-f61a3aff5238ab3cb0bd2fc499ee639b.png
 application.js: application-6728c025b1babaf8d0ee37d4e69971dd.js
-application.css: application-bded77f10db980cb59c7dce8fbabe41d.css
+application.css: application-9a91853c3bea920f9ab72446410cfc9c.css
 blueprint/plugins/buttons/icons/cross.png: blueprint/plugins/buttons/icons/cross-1f87fac86c438386527b5e7d5ceecb0e.png
 blueprint/plugins/buttons/icons/key.png: blueprint/plugins/buttons/icons/key-5f38d0204e83d3d83585a62ff993342b.png
 blueprint/plugins/buttons/icons/tick.png: blueprint/plugins/buttons/icons/tick-09de3f730b3b6ef960450a506b0916a9.png
