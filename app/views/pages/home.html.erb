@@ -64,7 +64,8 @@ Yep, I tricked her into marrying me. It all goes down on October 19, 2013 in Pie
        if (response.authResponse) { 
        // user is logged in 
 		FB.api('/me', function(response) {
-       		window.location.href = '/signup?fb_id=' + response.id + '&fb_name=' + response.name + '&fb_email=' + response.email
+			console.log(response)
+       		//window.location.href = '/signup?fb_id=' + response.id + '&fb_name=' + response.name + '&fb_email=' + response.email
 		});
        } else { 
        // user cancelled login 
