@@ -66,12 +66,12 @@ This stylesheet forms part of the Formtastic Rails Plugin
 }
 
 .formtastic .submit {
-  background: #617798;
+  background: #D3D3D3;
   margin-left: 50px;
 }
 
 .formtastic .create{
-  background: #617798;
+  background: #D3D3D3;
   margin-left: 50px;
 }
 
@@ -81,7 +81,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 }
 
 .formtastic .update{
-  background: #617798;
+  background: #D3D3D3;
   margin-left: 80px;
 }
 
@@ -123,7 +123,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 }
 
 .formtastic #user_number_of_guests_input input {
-  width:5%;
+  width:4%;
 }
 
 .formtastic #micropost_content{

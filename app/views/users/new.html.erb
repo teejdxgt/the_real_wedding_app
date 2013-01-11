@@ -7,7 +7,7 @@
 	<%= f.input :password, :label => "Create Password"  %>
 	<%= f.input :password_confirmation, :label => "Re-enter Password"  %></br>
 	<%= f.input :rsvp,  :as => :radio, :label => "Are you coming?", :wrapper_html => { :class => "rsvp" }%>
-	<%= f.input :number_of_guests, :label => "Number of Guests?" %>
+	<%= f.input :number_of_guests, :as=>:select, :collection => [0,1], :label => "Additional Guests?" %>
 	<%= f.hidden_field :fbid,  :value => params[:fb_id] %>
 <% end %>
 	<%= f.buttons do %>
