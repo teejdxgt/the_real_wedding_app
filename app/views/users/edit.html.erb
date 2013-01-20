@@ -7,7 +7,7 @@
 	<%= f.input :password, :label => "Change Password"  %>
 	<%= f.input :password_confirmation, :label => "Re-enter Password"  %></br>
 	<%= f.input :rsvp,  :as => :radio, :label => "Are you coming?", :wrapper_html => { :class => "rsvp" }%>
-	<%= f.input :number_of_guests, :label => "Number of Guests?" %>
+	<%= f.input :number_of_guests, :as=>:select, :collection => [0,1], :include_blank => false, :label => "Additional guests?" %>
 <% end %>
 	<%= f.buttons do %>
 	  <%= f.commit_button :label => "Update", :button_html => { :class => "update" } %>

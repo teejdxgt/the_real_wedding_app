@@ -57,6 +57,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 .formtastic textarea,
 .formtastic select {
   font-size:100%;
+  
 }
 
 .formtastic legend {

@@ -28,7 +28,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 .formtastic input,
 .formtastic textarea {
   padding: 9px;  
-  border: solid 1px #E5E5E5;  
+  border: solid 2px #E5E5E5;
   outline: 0;  
   font: normal 13px/100% Verdana, Tahoma, sans-serif;  
   /*width: 200px;*/  
@@ -45,7 +45,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 .formtastic input,
 .formtastic textarea,
 .formtastic select {
-  border-color: #C9C9C9;  
+  border-color: #C9C9C9; 
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 }
 
@@ -56,7 +56,6 @@ This stylesheet forms part of the Formtastic Rails Plugin
 .formtastic .create,
 .formtastic .update {
   width: auto;
-  border: 0px;
   /*background: #617798; */ 
   font-size: 14px;
   color: #FFFFFF;  
@@ -68,6 +67,7 @@ This stylesheet forms part of the Formtastic Rails Plugin
 .formtastic .submit {
   background: #D3D3D3;
   margin-left: 50px;
+
 }
 
 .formtastic .create{
